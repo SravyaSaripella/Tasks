@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel</title>
+        <style>
+            .nav{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-between;
+            }
+            .nav div a{
+                text-decoration:none;
+                color:black;
+                padding-right: 2vw;
+            }
+            .nav-right{
+                align-items: center;
+            }
+            .intro{
+                display:flex;
+                flex-wrap:wrap;
+                margin:5vw;
+            }
+            .intro-left{
+                width:50%;
+            }
+            .intro-right{
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (max-width: 1050px) {
+                .intro {
+                    flex-direction: column;
+                }
+                .intro-left{
+                    width:100%;
+                }
+            }
+            .category{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                text-align: center;
+                margin: 5vw;
+            }
+            .category-bottom{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vw;
+            }
+            .top-selling{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .top-selling-bottom{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .booking{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 5vw;
+            }
+            .booking-left{
+                width: 50%;
+            }
+            .booking-right{
+                width:50%;
+                background-color: white;
+                
+            }
+            .booking-steps{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .booking-step{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <div class="nav-left">
+                    <img src="Decore.png" alt="Logo" style="width:55%;height: 100%;">
+                </div>
+                <div class="nav-right">
+                    <a href="#">Destinations</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Flights</a>
+                    <a href="#">Bookings</a>
+                    <a href="#">Login</a>
+                    <a href="#" style="border:1px solid black; border-radius: 5px;text-align: center;">Sign up</a>
+                    <select name="language" id="language" style="border: none;outline: none;">
+                        <option value="EN">EN</option>
+                        <option value="ES">ES</option>
+                        <option value="FR">FR</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <div class="intro">
+            <div class="intro-left">
+                <p><span style="color:red;">BEST DESTINATIONS AROUND THE WORLD</span><br>
+                <span style="font-size: 85px;color:rgb(0, 0, 102);font-weight: bold;">Travel, enjoy and live a new and full life</span><br><br>
+                <span style="color: gray;font-size: 22px;">Built Wicket longer admire do barton vanity itself do  in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</span><br><br>
+                <button style="background-color: orange;color: white;border: none;height: 35px;">Find out more</button></p>
+            </div>
+            <div class="intro-right">
+                <img src="traveller.png" style="height:550px;">
+            </div>
+        </div>
+        <div class="category">
+            <div class="category-top">
+                <p><span style="color: gray;">CATEGORY</span><br><br>
+                <span style="color: rgb(0, 0, 102); font-size: 40px;font-weight: bold;">We Offer Best Services</span></p>
+            </div>
+            <div class="category-bottom">
+                <div class="category1" style="width:20%;">
+                    <img src="weather.png" style="width: 30%;">
+                    <h3>Calculated Weather</h3>
+                    <p style="color: gray;padding: 0vw 3vw 3vw 3vw;">Built Wicket longer admire do barton vanity itself do in it.</p>
+                </div>
+                <div class="category2" style="width: 20%;">
+                    <img src="flight.png" style="width:33%;">
+                    <h3>Best Flights</h3>
+                    <p style="color: gray;padding: 0vw 3vw 3vw 3vw;">Engrossed listening. Park gate sell they west hard for the.</p>
+                </div>
+                <div class="category3" style="width: 20%;">
+                    <img src="event.png" style="width:25%;">
+                    <h3>Local Events</h3>
+                    <p style="color: gray;padding: 0vw 3vw 3vw 3vw;">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                </div>
+                <div class="category4" style="width: 20%;">
+                    <img src="customization.png" style="width:30%;">
+                    <h3>Customization</h3>
+                    <p style="color: gray;padding: 0vw 3vw 3vw 3vw;">We deliver outsourced aviation services for military customers</p>
+                </div>
+            </div>
+        </div>
+        <div class="top-selling">
+            <div class="top-selling-top">
+                <p><span style="color:gray;">Top Selling</span><br><br>
+                <span style="font-size: 40px;font-weight: bold;">Top Destinations</span></p>
+            </div>
+            <div class="top-selling-bottom">
+                <div class="top-selling1">
+                    <img src="rome.png" style="width: 50%;">
+                    <p><span>Rome, Italy</span><span>$5,42k</span></p>
+                    <p><img src="send.png">10 Days Trip</p>
+                </div>
+                <div class="top-selling2">
+                    <img src="london.jpg" style="width: 50%;">
+                    <p><span>London, UK</span><span>$4.2k</span></p>
+                    <p><img src="send.png">12 Days Trip</p>
+                </div>
+                <div class="top-selling3">
+                    <img src="europe.png" style="width: 50%;">
+                    <p><span>Full Europe</span><span>$15k</span></p>
+                    <p><img src="send.png">28 Days Trip</p>
+                </div>
+            </div>
+        </div>
+        <div class="booking">
+            <div class="booking-left">
+                <p style="color: gray;">Easy and Fast</p>
+                <h1 style="font-size: 40px;">Book Your Next Trip <br> In 3 Easy Steps</h1>
+                <div class="booking-steps">
+                    <div class="booking-step">
+                        <div class="booking-steps-image" style="width:20%;">
+                            <img src="Rectangle 21.png" style="width:60%;"> 
+                        </div>
+                        <div class="booking-steps-content" style="width:80%;">
+                            <p>Choose Destination<br>
+                            <span style="color: gray;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus.</span></p>
+                        </div>
+                    </div>
+                    <div class="booking-step">
+                        <div class="booking-steps-image" style="width:20%;">
+                            <img src="Group 12.png" style="width:60%;"> 
+                        </div>
+                        <div class="booking-steps-content" style="width:80%;">
+                            <p>Make Payment<br>
+                            <span style="color: gray;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus.</span></p>
+                        </div>
+                    </div>
+                    <div class="booking-step">
+                        <div class="booking-steps-image" style="width:20%;">
+                            <img src="Group 11.png" style="width:60%;"> 
+                        </div>
+                        <div class="booking-steps-content" style="width:80%;">
+                            <p>Reach Airport on Selected Date<br>
+                            <span style="color: gray;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-right">
+                
+            </div>
+        </div>
+    </body>
+</html>
